@@ -28,6 +28,14 @@
          .main-menu {
             width: 400px; 
         }
+        /* Uniform course card images */
+        .h2_course-item-img { position: relative; overflow: hidden; }
+        .h2_course-item-img img {
+          width: 100%;
+          height: 220px; /* fixed visual height */
+          object-fit: cover; /* crop to fill without distortion */
+          display: block;
+        }
     </style>
      
     <body>
@@ -68,27 +76,12 @@
                                     <ul>
                                            <li><a href="index.html">Home</a></li>
                                            <li><a href="about.html">About</a></li>
-                                        <li><a href="corprate.html">corprate training</a></li>
-                                        <li><a href="CBSE.html">CBSE</a></li>
-
-                                        
-                                        <li class="">
-                                            <a href="course.html">Courses</a>
-                                            <!-- <ul class="submenu">
-                                                <li><a href="course.html">Courses 1</a></li>
-                                                <li><a href="course-2.html">Courses 2</a></li>
-                                                <li><a href="course-details.html">Course Details</a></li>
-                                            </ul> -->
-                                        </li>
-                                        <li class="">
-                                            <a href="blog.html">Blog</a>
-                                            <!-- <ul class="submenu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                            </ul> -->
-                                        </li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                    </ul>
+                                           <li class=""><a href="course.html">Courses</a></li>
+                                           <li><a href="corprate.html">corprate training</a></li>
+                                           <li><a href="CBSE.html">CBSE</a></li>
+                                           <li class=""><a href="blog.html">Blog</a></li>
+                                           <li><a href="contact.html">Contact</a></li>
+                                     </ul>
                                 </nav>
                             </div>
                         </div>
@@ -377,7 +370,236 @@
                             <div class="course-inner">
                                 <div class="tab-content" id="pills-tabContent">
                                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                        <!-- Static course cards (requested) -->
                                         <div class="row">
+                                          <!-- Generative AI -->
+                                          <div class="col-xl-4 col-lg-6 col-md-6">
+                                            <div class="h2_course-item mb-30">
+                                              <div class="h2_course-item-img">
+                                                <a href="generative-ai.html"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Artificial_Intelligence_%26_AI_%26_Machine_Learning_-_30212411048.jpg" alt="Generative AI"></a>
+                                              </div>
+                                              <div class="h2_course-content">
+                                                <div class="h2_course-content-top">
+                                                  <div class="h2_course-rating">
+                                                    <ul>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                    </ul>
+                                                    <span>(120 Reviews)</span>
+                                                  </div>
+                                                  <div class="h2_course-save">
+                                                    <a href="#"><i class="fa-thin fa-bookmark"></i></a>
+                                                  </div>
+                                                </div>
+                                                <h5 class="h2_course-content-title"><a href="generative-ai.html">Generative AI</a></h5>
+                                                <p class="h2_course-content-text">
+                                                  Learn LLMs, prompt engineering, and building AI apps with modern tooling.
+                                                </p>
+                                              </div>
+                                              <div class="h2_course-content-bottom">
+                                                <div class="h2_course-bottom-corprate training">
+                                                  <span>Enquire</span>
+                                                </div>
+                                                <div class="h2_course-bottom-btn">
+                                                  <a href="generative-ai.html">More Details<i class="fa-light fa-arrow-right"></i><i class="fa-light fa-arrow-right"></i></a>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <!-- Python Full Stack -->
+                                          <div class="col-xl-4 col-lg-6 col-md-6">
+                                            <div class="h2_course-item mb-30">
+                                              <div class="h2_course-item-img">
+                                                <a href="python-full-stack.html"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Programming_code.jpg" alt="Python Development"></a>
+                                              </div>
+                                              <div class="h2_course-content">
+                                                <div class="h2_course-content-top">
+                                                  <div class="h2_course-rating">
+                                                    <ul>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                    </ul>
+                                                    <span>(94 Reviews)</span>
+                                                  </div>
+                                                  <div class="h2_course-save">
+                                                    <a href="#"><i class="fa-thin fa-bookmark"></i></a>
+                                                  </div>
+                                                </div>
+                                                <h5 class="h2_course-content-title"><a href="python-full-stack.html">Python Full Stack Development</a></h5>
+                                                <p class="h2_course-content-text">
+                                                  Build complete web apps using Python, Django/Flask, and modern frontend stacks.
+                                                </p>
+                                              </div>
+                                              <div class="h2_course-content-bottom">
+                                                <div class="h2_course-bottom-corprate training">
+                                                  <span>Enquire</span>
+                                                </div>
+                                                <div class="h2_course-bottom-btn">
+                                                  <a href="python-full-stack.html">More Details<i class="fa-light fa-arrow-right"></i><i class="fa-light fa-arrow-right"></i></a>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <!-- Digital Marketing -->
+                                          <div class="col-xl-4 col-lg-6 col-md-6">
+                                            <div class="h2_course-item mb-30">
+                                              <div class="h2_course-item-img">
+                                                <a href="dm-a.html"><img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Growing_Social_Media_Influence_on_Digital_Marketing.jpg" alt="Digital Marketing"></a>
+                                              </div>
+                                              <div class="h2_course-content">
+                                                <div class="h2_course-content-top">
+                                                  <div class="h2_course-rating">
+                                                    <ul>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                    </ul>
+                                                    <span>(150 Reviews)</span>
+                                                  </div>
+                                                  <div class="h2_course-save">
+                                                    <a href="#"><i class="fa-thin fa-bookmark"></i></a>
+                                                  </div>
+                                                </div>
+                                                <h5 class="h2_course-content-title"><a href="dm-a.html">Digital Marketing</a></h5>
+                                                <p class="h2_course-content-text">
+                                                  SEO, SEM, Social Media, and Analytics with practical, hands-on projects.
+                                                </p>
+                                              </div>
+                                              <div class="h2_course-content-bottom">
+                                                <div class="h2_course-bottom-corprate training">
+                                                  <span>Enquire</span>
+                                                </div>
+                                                <div class="h2_course-bottom-btn">
+                                                  <a href="dm-a.html">More Details<i class="fa-light fa-arrow-right"></i><i class="fa-light fa-arrow-right"></i></a>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <!-- MERN Stack -->
+                                          <div class="col-xl-4 col-lg-6 col-md-6">
+                                            <div class="h2_course-item mb-30">
+                                              <div class="h2_course-item-img">
+                                                <a href="mern-stack.html"><img src="https://i0.wp.com/blog.apitier.com/wp-content/uploads/2023/02/MERN_Stack.jpg?fit=560%2C315&amp;ssl=1" alt="MERN Stack"></a>
+                                              </div>
+                                              <div class="h2_course-content">
+                                                <div class="h2_course-content-top">
+                                                  <div class="h2_course-rating">
+                                                    <ul>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                    </ul>
+                                                    <span>(156 Reviews)</span>
+                                                  </div>
+                                                  <div class="h2_course-save">
+                                                    <a href="#"><i class="fa-thin fa-bookmark"></i></a>
+                                                  </div>
+                                                </div>
+                                                <h5 class="h2_course-content-title"><a href="mern-stack.html">MERN Stack Development</a></h5>
+                                                <p class="h2_course-content-text">
+                                                  Master MongoDB, Express.js, React, and Node.js to build modern, scalable web applications.
+                                                </p>
+                                              </div>
+                                              <div class="h2_course-content-bottom">
+                                                <div class="h2_course-bottom-corprate training">
+                                                  <span>Enquire</span>
+                                                </div>
+                                                <div class="h2_course-bottom-btn">
+                                                  <a href="mern-stack.html">More Details<i class="fa-light fa-arrow-right"></i><i class="fa-light fa-arrow-right"></i></a>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <!-- MEAN Stack -->
+                                          <div class="col-xl-4 col-lg-6 col-md-6">
+                                            <div class="h2_course-item mb-30">
+                                              <div class="h2_course-item-img">
+                                                <a href="mean-stack.html"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Mobile_developer_at_work_%28Unsplash%29.jpg" alt="MEAN Stack"></a>
+                                              </div>
+                                              <div class="h2_course-content">
+                                                <div class="h2_course-content-top">
+                                                  <div class="h2_course-rating">
+                                                    <ul>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                    </ul>
+                                                    <span>(87 Reviews)</span>
+                                                  </div>
+                                                  <div class="h2_course-save">
+                                                    <a href="#"><i class="fa-thin fa-bookmark"></i></a>
+                                                  </div>
+                                                </div>
+                                                <h5 class="h2_course-content-title"><a href="mean-stack.html">MEAN Stack Development</a></h5>
+                                                <p class="h2_course-content-text">
+                                                  Learn MongoDB, Express.js, Angular, and Node.js to build powerful full-stack JavaScript applications.
+                                                </p>
+                                              </div>
+                                              <div class="h2_course-content-bottom">
+                                                <div class="h2_course-bottom-corprate training">
+                                                  <span>Enquire</span>
+                                                </div>
+                                                <div class="h2_course-bottom-btn">
+                                                  <a href="mean-stack.html">More Details<i class="fa-light fa-arrow-right"></i><i class="fa-light fa-arrow-right"></i></a>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          
+                                          <!-- Web Development -->
+                                          <div class="col-xl-4 col-lg-6 col-md-6">
+                                            <div class="h2_course-item mb-30">
+                                              <div class="h2_course-item-img">
+                                                <a href="web-development.html"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Man_typing_on_laptop_%28Unsplash%29.jpg" alt="Web Development"></a>
+                                              </div>
+                                              <div class="h2_course-content">
+                                                <div class="h2_course-content-top">
+                                                  <div class="h2_course-rating">
+                                                    <ul>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                      <li><i class="fa-solid fa-star"></i></li>
+                                                    </ul>
+                                                    <span>(102 Reviews)</span>
+                                                  </div>
+                                                  <div class="h2_course-save">
+                                                    <a href="#"><i class="fa-thin fa-bookmark"></i></a>
+                                                  </div>
+                                                </div>
+                                                <h5 class="h2_course-content-title"><a href="dm-w.html">Web Development</a></h5>
+                                                <p class="h2_course-content-text">
+                                                  HTML, CSS, JavaScript, and modern frameworks to build responsive websites.
+                                                </p>
+                                              </div>
+                                              <div class="h2_course-content-bottom">
+                                                <div class="h2_course-bottom-corprate training">
+                                                  <span>Enquire</span>
+                                                </div>
+                                                <div class="h2_course-bottom-btn">
+                                                  <a href="dm-w.html">More Details<i class="fa-light fa-arrow-right"></i><i class="fa-light fa-arrow-right"></i></a>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          </div>
+                                          <div class="row" style="display:none">
                                             <div class="col-xxl-3 col-lg-4 col-md-6">
                                                 <div class="course-item mb-30">
                                                     <div class="course-img">
@@ -2887,11 +3109,82 @@
                         </div>
                     </div>
                 </div>
-            </section> -->
+            </section> 
             <!-- blog area end -->
 
+            <!-- testimonials area start -->
+            <section class="testimonial-area pt-120 pb-90">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-title text-center mb-50">
+                                <span class="sub-title">Testimonials</span>
+                                <h2 class="title">What Our Students Say</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <div class="testimonial-item mb-30">
+                                <div class="testimonial-content">
+                                    <div class="testimonial-rating mb-10">
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <p class="mb-15">The Python Full Stack course was incredibly practical. I built real projects and landed an internship within weeks.</p>
+                                    <h6 class="mb-5">Arjun Kumar</h6>
+                                    <span class="text-muted">Python Full Stack</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <div class="testimonial-item mb-30">
+                                <div class="testimonial-content">
+                                    <div class="testimonial-rating mb-10">
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                                        </ul>
+                                    </div>
+                                    <p class="mb-15">Loved the MERN Stack course! Clear explanations and up-to-date content helped me ship my first full app.</p>
+                                    <h6 class="mb-5">Sneha Patel</h6>
+                                    <span class="text-muted">MERN Stack</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <div class="testimonial-item mb-30">
+                                <div class="testimonial-content">
+                                    <div class="testimonial-rating mb-10">
+                                        <ul>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <p class="mb-15">Great mentors and hands-on assignments. The Generative AI track boosted my portfolio with impressive projects.</p>
+                                    <h6 class="mb-5">Rahul Verma</h6>
+                                    <span class="text-muted">Generative AI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- testimonials area end -->
+
             <!-- cta area start -->
-            <div class="cta-area mt-120">
+            <!-- <div class="cta-area mt-120">
                 <div class="container">
                     <div class="cta-wrapper">
                         <div class="row align-items-center">
@@ -2911,7 +3204,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- cta area end -->
         </main>
 
@@ -2953,15 +3246,15 @@
                         </div>
                         <div class="col-xl-2 col-lg-5 col-md-5 col-sm-6 d-flex justify-content-xl-center order-md-4 order-xl-3">
                             <div class="footer-widget mb-40">
-                                <h5 class="footer-widget-title">Categories</h5>`
+                                <h5 class="footer-widget-title">Categories</h5>
                                 <div class="footer-widget-list">
                                     <ul>
-                                        <li><a href="dm-a.html">DM - Advanced</a></li>
-                                        <li><a href="dm-i.html">DM - Intermediate</a></li>
-                                        <li><a href="dm-a.html">DM - Basic</a></li>
-                                        <li><a href="">Corporate Training</a></li>
+                                        <li><a href="generative-ai.html">Generative AI</a></li>
+                                        <li><a href="dm-a.html">Digital Marketing</a></li>
+                                        <li><a href="python-full-stack.html">Python Full Stack</a></li>
+                                        <li><a href="mern-stack.html">MERN Stack</a></li>
+                                        <li><a href="mean-stack.html">MEAN Stack</a></li>
                                         <li><a href="dm-w.html">Web Development</a></li>
-                                        <li><a href="dm-m.html">Mern Stack Development</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -3013,5 +3306,22 @@
         <script src="assets/js/odometer.min.js"></script>
         <script src="assets/js/appear.min.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const placeholders = document.querySelectorAll('.course-cards-placeholder[data-src]');
+          placeholders.forEach(async (el) => {
+            try {
+              const src = el.getAttribute('data-src');
+              const res = await fetch(src, { cache: 'no-store' });
+              if (!res.ok) throw new Error('Failed to load ' + src);
+              const html = await res.text();
+              el.innerHTML = html;
+            } catch (e) {
+              console.error(e);
+              el.innerHTML = '<p style="color:red">Failed to load course cards.</p>';
+            }
+          });
+        });
+        </script>
     </body>
 </html>

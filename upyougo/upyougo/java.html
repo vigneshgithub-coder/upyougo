@@ -125,6 +125,15 @@
                                       <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-bookmark"></i><span>Overview</span></button>
                                     </li>
                                     <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-thin fa-box"></i><span>Curriculum</span></button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="fa-thin fa-user"></i><span>Instructor</span></button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="pills-faqs-tab" data-bs-toggle="pill" data-bs-target="#pills-faqs" type="button" role="tab" aria-controls="pills-faqs" aria-selected="false"><i class="fa-thin fa-circle-question"></i><span>FAQs</span></button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
                                       <button class="nav-link" id="pills-four-tab" data-bs-toggle="pill" data-bs-target="#pills-four" type="button" role="tab" aria-controls="pills-four" aria-selected="false"><i class="fa-thin fa-message-dots"></i><span>Reviews</span></button>
                                     </li>
                                 </ul>
@@ -145,6 +154,143 @@
                                                     <li>Develop dynamic front-ends with HTML, CSS, and JavaScript.</li>
                                                     <li>Connect to and manage SQL & NoSQL databases.</li>
                                                 </ul>
+                                            </div>
+                                            <h4 class="course_details-content-title mb-20">Tools you will use</h4>
+                                            <div class="course_details-content-list">
+                                                <ul>
+                                                    <li>IntelliJ IDEA / Eclipse</li>
+                                                    <li>Git & GitHub</li>
+                                                    <li>Postman for API testing</li>
+                                                    <li>Maven/Gradle</li>
+                                                    <li>Docker (optional)</li>
+                                                </ul>
+                                            </div>
+                                            <h4 class="course_details-content-title mb-20">Capstone Projects</h4>
+                                            <div class="course_details-content-list">
+                                                <ul>
+                                                    <li>E-commerce REST API with Spring Boot</li>
+                                                    <li>Employee Management System (CRUD, Auth)</li>
+                                                    <li>Full-stack app with Java backend + JS frontend</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                        <div class="course_details-curriculum">
+                                            <h4 class="course_details-content-title mb-15">Course Curriculum</h4>
+                                            <p class="mb-25">A structured path from Core Java to production-ready applications.</p>
+                                            <div class="accordion" id="javaCurr">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="javaCore">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#javaCoreC" aria-expanded="true" aria-controls="javaCoreC">
+                                                            Module 1: Core Java & OOP
+                                                        </button>
+                                                    </h2>
+                                                    <div id="javaCoreC" class="accordion-collapse collapse show" aria-labelledby="javaCore" data-bs-parent="#javaCurr">
+                                                        <div class="accordion-body">
+                                                            <ul>
+                                                                <li>Java syntax, OOP, exceptions</li>
+                                                                <li>Collections, generics, streams</li>
+                                                                <li>File I/O, unit testing (JUnit)</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="javaSpring">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#javaSpringC" aria-expanded="false" aria-controls="javaSpringC">
+                                                            Module 2: Spring Boot & REST
+                                                        </button>
+                                                    </h2>
+                                                    <div id="javaSpringC" class="accordion-collapse collapse" aria-labelledby="javaSpring" data-bs-parent="#javaCurr">
+                                                        <div class="accordion-body">
+                                                            <ul>
+                                                                <li>REST controllers, services, validation</li>
+                                                                <li>Security basics (Spring Security)</li>
+                                                                <li>Documentation with Swagger/OpenAPI</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="javaData">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#javaDataC" aria-expanded="false" aria-controls="javaDataC">
+                                                            Module 3: Data & Persistence
+                                                        </button>
+                                                    </h2>
+                                                    <div id="javaDataC" class="accordion-collapse collapse" aria-labelledby="javaData" data-bs-parent="#javaCurr">
+                                                        <div class="accordion-body">
+                                                            <ul>
+                                                                <li>JPA/Hibernate, entities, repositories</li>
+                                                                <li>SQL (MySQL/PostgreSQL)</li>
+                                                                <li>NoSQL basics (MongoDB)</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="javaDeploy">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#javaDeployC" aria-expanded="false" aria-controls="javaDeployC">
+                                                            Module 4: Testing & Deployment
+                                                        </button>
+                                                    </h2>
+                                                    <div id="javaDeployC" class="accordion-collapse collapse" aria-labelledby="javaDeploy" data-bs-parent="#javaCurr">
+                                                        <div class="accordion-body">
+                                                            <ul>
+                                                                <li>Integration tests</li>
+                                                                <li>Builds (Maven/Gradle), Docker basics</li>
+                                                                <li>Deployment overview (cloud options)</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                                        <div class="course_details-instructor">
+                                            <div class="course_details-thumbnail w_img">
+                                                <img src="assets/img/teacher/2/1.jpg" alt="Instructor image">
+                                            </div>
+                                            <div class="course_details-author-content">
+                                                <h6 class="course_details-author-title">Lead Instructor</h6>
+                                                <span class="course_details-author-subtitle">Senior Java Developer</span>
+                                                <p>12+ years designing scalable Java systems with Spring Boot, Hibernate, and cloud-native patterns.</p>
+                                                <div class="contact-social">
+                                                    <span>Social Media</span>
+                                                    <ul>
+                                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-faqs" role="tabpanel" aria-labelledby="pills-faqs-tab" tabindex="0">
+                                        <div class="course_details-content">
+                                            <h4 class="course_details-content-title mb-15">Frequently Asked Questions</h4>
+                                            <div class="accordion" id="javaFaq">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="jfaq1">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#jfaq1c" aria-expanded="true" aria-controls="jfaq1c">
+                                                            Is prior Java experience required?
+                                                        </button>
+                                                    </h2>
+                                                    <div id="jfaq1c" class="accordion-collapse collapse show" aria-labelledby="jfaq1" data-bs-parent="#javaFaq">
+                                                        <div class="accordion-body">No. We begin with Core Java fundamentals before moving to frameworks.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="jfaq2">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#jfaq2c" aria-expanded="false" aria-controls="jfaq2c">
+                                                            Do I get a certificate?
+                                                        </button>
+                                                    </h2>
+                                                    <div id="jfaq2c" class="accordion-collapse collapse" aria-labelledby="jfaq2" data-bs-parent="#javaFaq">
+                                                        <div class="accordion-body">Yes, a certificate is provided upon successful completion of projects and assessments.</div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

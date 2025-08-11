@@ -72,12 +72,13 @@
                                     <ul>
                                            <li><a href="index.html">Home</a></li>
                                            <li><a href="about.html">About</a></li>
+                                           <li class="">
+                                            <a href="course.html">Courses</a>
                                         <li><a href="corprate.html">corprate training</a></li>
                                         <li><a href="CBSE.html">CBSE</a></li>
 
                                         
-                                        <li class="">
-                                            <a href="course.html">Courses</a>
+                                        
                                             <!-- <ul class="submenu">
                                                 <li><a href="course.html">Courses</a></li>
                                                 <li><a href="course-2.html">Courses 2</a></li>
@@ -153,30 +154,36 @@
                             <div class="col-xl-8 col-md-8">
                                 <div class="contact-content pr-80 mb-20">
                                     <h3 class="contact-title mb-25">Send Me Message</h3>
-                                    <form action="#" class="contact-form">
+                                    <form action="https://formsubmit.co/rvigneshwaran627@gmail.com" method="POST" class="contact-form" id="contactForm">
+                                        <!-- FormSubmit config -->
+                                        <input type="hidden" name="_subject" value="New enquiry from Up You Go contact form">
+                                        <input type="hidden" name="_template" value="box">
+                                        <input type="hidden" name="_captcha" value="false">
+                                        <!-- Optional: redirect after submit -->
+                                        <!-- <input type="hidden" name="_next" value="https://upyougo.in/thank-you.html"> -->
                                         <div class="row">
                                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6">
                                                 <div class="contact-form-input mb-30">
-                                                    <input type="text" placeholder="Your Name">
+                                                    <input type="text" name="name" placeholder="Your Name" required>
                                                     <span class="inner-icon"><i class="fa-thin fa-user"></i></span>
                                                 </div>
                                             </div>
                                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6">
                                                 <div class="contact-form-input mb-30">
-                                                    <input type="email" placeholder="Email Address">
+                                                    <input type="email" name="email" placeholder="Email Address" required>
                                                     <span class="inner-icon"><i class="fa-thin fa-envelope"></i></span>
                                                 </div>
                                             </div>
                                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6">
                                                 <div class="contact-form-input mb-30">
-                                                    <input type="text" placeholder="Your Number">
+                                                    <input type="text" name="phone" placeholder="Your Number">
                                                     <span class="inner-icon"><i class="fa-thin fa-phone-volume"></i></span>
                                                 </div>
                                             </div>
                                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 ">
                                                 <div class="contact-form-input">
                                                     <span class="inner-icon inner-icon-select"><i class="fa-thin fa-circle-exclamation"></i></span>
-                                                    <select name="select" class="contact-form-list has-nice-select mb-30">
+                                                    <select name="topic" class="contact-form-list has-nice-select mb-30">
                                                         <option value="1">Select Subject</option>
                                                         <option value="corporate">Corporate Training</option>
                                                         <option value="cbse">CBSE Board Preparation</option>
@@ -197,18 +204,18 @@
                                             </div>
                                             <div class="col-12">
                                                 <div class="contact-form-input mb-50 contact-form-textarea">
-                                                    <textarea name="message" cols="30" rows="10" placeholder="Feel free to get in touch!"></textarea>
+                                                    <textarea name="message" cols="30" rows="10" placeholder="Feel free to get in touch!" required></textarea>
                                                     <span class="inner-icon"><i class="fa-thin fa-pen"></i></span>
                                                 </div>
                                             </div>
                                             <div class="col-12">
                                                 <div class="contact-form-submit mb-30">
                                                     <div class="contact-form-btn">
-                                                        <a href="#" class="theme-btn contact-btn">Send Message</a>
+                                                        <button type="submit" class="theme-btn contact-btn">Send Message</button>
                                                     </div>
                                                     <div class="contact-form-condition">
                                                         <label class="condition_label">I agree that my data is collected and stored.
-                                                            <input type="checkbox">
+                                                            <input type="checkbox" name="consent" required>
                                                             <span class="check_mark"></span>
                                                         </label>
                                                     </div>
